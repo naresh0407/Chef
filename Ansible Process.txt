@@ -1,0 +1,16 @@
+1) FlushOut Ipconfig
+
+chkconfig iptables off
+
+2)Disable selinux
+
+vi /etc/sysconfig selinux
+
+3) Yum Install Ansible
+
+Specify server in hosts file vi /etc/host
+
+
+Gettting Uptime of remote server
+
+ansible server2 -a "uptime"
